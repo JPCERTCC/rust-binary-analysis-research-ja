@@ -77,14 +77,11 @@ closure_env {
 
 ```rust
 fn main() {
-    // 合計を計算するクロージャを定義
     let sum = |a: i32, b: i32| -> i32 {
         a + b
     }
-    // クロージャを使って合計を計算
-    let result = sum(5, 10)
-    // 結果を表示
-    println!("The sum of 5 and 10 is: {}", result);
+
+    println!("The sum of 5 and 10 is: {}", sum(5, 10));
 }
 ```
 
@@ -93,14 +90,12 @@ fn main() {
 ```rust
 fn main() {
     let x = 10;
-    // xをキャプチャするクロージャを定義
+
     let add_to_x = |y: i32| -> i32 {
         x + y
     };
-    // クロージャを呼び出す
-    let result = add_to_x(5);
-    // 結果を表示
-    println!("The result of adding 5 to {} is: {}", x, result);
+
+    println!("The result of adding 5 to {} is: {}", x, add_to_x(5));
 }
 ```
 
@@ -134,8 +129,7 @@ fn main() {
     };
 
     let input_value = 3;
-    let result = double(input_value);
 
-    println!("The result is: {}", result);
+    println!("The result is: {}", double(input_value));
 }
 ```
