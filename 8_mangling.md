@@ -13,7 +13,7 @@ Rustにおけるシンボルマングリングには、`legacy`と`v0`の2つの
 ### マングリングのバージョン
 
 Rustのシンボルマングリングには、`legacy`と`v0`バージョンの二つが存在しており、デフォルトは`legacy`バージョンである。
-`v0`バージョンは、[RFC2603](https://rust-lang.github.io/rfcs/2603-rust-symbol-name-mangling-v0.html)で提案されており、`sysmbol-mangling-version`オプションで指定することができる。
+`v0`バージョンは、[RFC2603](https://rust-lang.github.io/rfcs/2603-rust-symbol-name-mangling-v0.html)で提案されており、`symbol-mangling-version`オプションで指定することができる。
 
 ### `legacy`バージョンでマングリングされたシンボルの構造
 
